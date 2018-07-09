@@ -68,11 +68,10 @@ export default {
         document.documentElement.scrollTop = 0
         alert('密碼不相同')
       } else {
-        let list = ['name','sex','birthday','card_number','phone','email','line','password','password2']
+        let list = ['name', 'sex', 'birthday', 'card_number', 'phone', 'email', 'line', 'password', 'password2']
         for (let i of list) {
           localStorage.setItem(i, this[i])
         }
-        
         this.$router.push('/Confirm')
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0

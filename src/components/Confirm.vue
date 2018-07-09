@@ -34,17 +34,17 @@
 <script>
 export default {
   data () {
-      return {
-        name: '',
-        sex: '',
-        birthday: '',
-        card_number: '',
-        phone: '',
-        email: '',
-        line: '',
-        password: '',
-        password2: ''
-      }
+    return {
+      name: '',
+      sex: '',
+      birthday: '',
+      card_number: '',
+      phone: '',
+      email: '',
+      line: '',
+      password: '',
+      password2: ''
+    }
   },
   methods: {
     changeRoute () {
@@ -53,7 +53,17 @@ export default {
     }
   },
   beforeMount () {
-    let list = ['name','sex','birthday','card_number','phone','email','line','password','password2']
+    let list = [
+      'name',
+      'sex',
+      'birthday',
+      'card_number',
+      'phone',
+      'email',
+      'line',
+      'password',
+      'password2'
+    ]
     for (let i of list) {
       this[i] = localStorage.getItem(i)
     }
